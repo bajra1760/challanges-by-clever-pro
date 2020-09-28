@@ -1,0 +1,50 @@
+.btn,
+select {
+  margin: 10px;
+}
+.challange {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  border: 1px solid black;
+}
+.challange .interact {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  border: 1px solid black;
+}
+.display {
+  display: none;
+  border: 1px solid black;
+}
+.display2 img {
+  margin: 10px;
+  box-shadow: 0 10px 50px 0 rgba(0, 0, 0, 7);
+}
+.display2 {
+  border: 1px solid black;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.challange .interact2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  border: 1px solid black;
+}
+.challange .result {
+  display: none;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  border: 1px solid black;
+  text-align: center;
+}
+.challange .result h3 {
+  font-size: 50px;
+  padding-top: 60px;
+}
+.challange .interact2 a:hover {
+  transform: scale(1.1);
+}

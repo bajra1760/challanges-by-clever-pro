@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Challanges</title>
+  </head>
+  <body>
+    <header class="navbar navbar-expand-lg navbar-light bg-dark">
+      <div class="container">
+        <h1 class="text-white">My Challanges</h1>
+      </div>
+    </header>
+    <div class="container">
+      <section class="challange">
+        <h3 class="heading">Challange 1: Your Age in Days</h3>
+        <div class="interact">
+          <button class="btn btn-primary" role="button" onClick="getDay()">
+            Start
+          </button>
+          <button class="btn btn-danger" role="button" onClick="reset()">
+            Reset
+          </button>
+        </div>
+      </section>
+      <section class="display alert alert-info text-center">
+        <div id="display"></div>
+      </section>
+      <section class="challange">
+        <h3 class="heading">Challange 2: Cat Generator</h3>
+        <div class="interact">
+          <button class="btn btn-info" role="button" onClick="getCat()">
+            Cat Please
+          </button>
+        </div>
+      </section>
+      <section class="display2" id="display2"></section>
+      <section class="challange">
+        <h3 class="heading">Challange 3: Rock Paper Scissor</h3>
+        <div class="interact2" id="interact2">
+          <a href="#" role="button"
+            ><img src="rock.png" alt="rock" onClick="getAction('rock')"
+          /></a>
+          <a href="#" role="button"
+            ><img src="paper.png" alt="paper" onClick="getAction('paper')"
+          /></a>
+          <a href="#" role="button"
+            ><img
+              src="scissor.png"
+              alt="scissor"
+              onClick="getAction('scissor')"
+          /></a>
+        </div>
+        <div class="result" id="result"></div>
+      </section>
+      <section class="challange">
+        <h3 class="heading">Challange 4: Change the Color of All Buttons</h3>
+        <div class="interact">
+          <select class="form-control-sm" onClick="getBtnColor(this)">
+            <option value="random">Random</option>
+            <option value="red">Red</option>
+            <option value="green">Green</option>
+            <option value="reset">Reset</option>
+            option
+          </select>
+          <button class="btn btn-primary">Facebook</button>
+          <button class="btn btn-danger">Instagram</button>
+          <button class="btn btn-success">What's App</button>
+          <button class="btn btn-warning">Snapchat</button>
+        </div>
+      </section>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  </body>
+</html>
